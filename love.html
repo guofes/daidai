@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aixin</title>
+	<style type="text/css">
+		.heart { 
+			margin-left: 300px;
+			margin-top: 300px;
+    position: relative; 
+    width: 300px; 
+    height: 300px; 
+    transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    background: red; 
+} 
+.heart:before, .heart:after { 
+    position: absolute; 
+    display: block; 
+    content: ''; 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 100%; 
+    background: red; 
+} 
+.heart:before { 
+    left: -50%; 
+    top: 0; 
+} 
+.heart:after { 
+    right: 0; 
+    top: -50%; 
+} 
+	</style>
+</head>
+<body>
+<div class="heart"></div> 
+</body>
+</html>
