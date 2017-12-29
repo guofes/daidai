@@ -27,12 +27,12 @@ var page7 = document.getElementById("page7");
 var page8 = document.getElementById("page8");
 var page9 = document.getElementById("page9");
 var page10 = document.getElementById("page10");
-// var music = document.getElementById("music");
-// var audio = document.getElementsByTagName("audio")[0];
+var music = document.getElementById("music");
+var audio = document.getElementsByTagName("audio")[0];
 //当音乐播放完停止时，自动停止旋转,添加监听事件
-// audio.addEventListener("ended",function(event){
-//     music.setAttribute("class","");
-// },false);
+audio.addEventListener("ended",function(event){
+    music.setAttribute("class","");
+},false);
 
 //点击音乐图标时，控制音乐播放效果
 //  music.onclick =function(){
@@ -45,15 +45,15 @@ var page10 = document.getElementById("page10");
 //         audio.pause();
 //     };
 // };
-// music.addEventListener("touchstart",function(event){
-//     if(audio.paused){
-//         audio.play();
-//         this.setAttribute("class","play");
-//     }else {
-//         audio.pause();
-//         this.setAttribute("class","");
-//     };
-// },false);
+music.addEventListener("touchstart",function(event){
+    if(audio.paused){
+        audio.play();
+        this.setAttribute("class","play");
+    }else {
+        audio.pause();
+        this.setAttribute("class","");
+    };
+},false);
 
 p1_lantern.addEventListener("touchstart",function(event){
     page1.style.display="none";
